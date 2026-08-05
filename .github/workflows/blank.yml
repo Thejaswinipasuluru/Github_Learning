@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test-Phase
-        run: echo"Testing APP"
+        run: echo "Testing APP"
   Deploy:
     runs-on: ubuntu-latest
     steps:
