@@ -14,5 +14,9 @@ jobs:
     steps:
       - name: Build App
         run: echo "Buildong an application"
-    
+  Test:
+    runs-on: ubuntu_latest
+    steps:
+      - name: Test App
+        run: echo "Testing an application"
       
