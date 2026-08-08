@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build-step
-        run: echo "A demo build"
+        run: echo "Hello MY_NAME"
   
       
