@@ -19,4 +19,10 @@ jobs:
     steps:
       - name: Test App
         run: echo "Testing an application"
+  Deploy:
+    runs-on: ubuntu_latest
+    steps:
+      - name: Deploy App
+        run: echo "Deploying an application"
+
       
