@@ -10,17 +10,19 @@ on:
       - develop
 jobs:
   Build:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: Build App
-        run: echo "Buildong an application"
+        run: echo "Building an application"
   Test:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
+    needs: Build
     steps:
       - name: Test App
         run: echo "Testing an application"
   Deploy:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
+    needs: Test
     steps:
       - name: Deploy App
         run: echo "Deploying an application"
